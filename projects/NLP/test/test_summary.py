@@ -18,13 +18,13 @@ class SummaryTest(unittest.TestCase):
             },
              {
               "id": 3,
-              "text": "I am a dog lover and hate cats"
+              "text": "I am a dog lover and hate cats. I will never have a cat as a pet."
             }
         ]}
         """
         op_dict = json.loads(op_str)
         summary = get_summary(1, op_dict)
-        self.assertEqual("The cats are really cute animals", summary)
+        self.assertIn("I am a dog lover and hate cats", summary)
 
 
 if __name__ == '__main__':

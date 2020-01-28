@@ -48,5 +48,6 @@ def get_summary(n_ideas, opinions):
                     sent_score[sentence] += word_freq[word.text.lower()]
 
     summarized_sent = nlargest(n_ideas, sent_score, key=sent_score.get)
-    summary = [w.text for w in summarized_sent]
+    summary_list = [w.text for w in summarized_sent]
+    summary = '.'.join(summary_list)
     return summary
