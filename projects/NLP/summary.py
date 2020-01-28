@@ -13,7 +13,7 @@ def get_summary(n_ideas, opinions):
 
     """
     # load corpus
-    nlp = spacy.load('en_core_web_lg')
+    nlp = spacy.load('en_core_web_sm')
 
     full_text = ""
     for curr_op in opinions:
