@@ -1,0 +1,88 @@
+{
+  "opinions": [
+    {
+      "id": 1,
+      "text": "The videos from #ReactConf2019 are out! Here is a complete playlist. Big thank you to the speakers for all the effort they put into their talks."
+    },
+    {
+      "id": 2,
+      "text":"Big thanks to \n@en_JS\n and the Relay team for sharing these lessons and helping the broader React ecosystem adopt performant data fetching patterns by default."
+    },
+    {
+      "id": 3,
+      "text":"This blog post is primarily aimed at people working on data fetching libraries. If you're mostly working on application code, don't feel like you *have to* read it — although you might still find it interesting!"
+    },
+    {
+      "id": 4,
+      "text":"At React Conf 2019 we announced an experimental release of React that supports Concurrent Mode and Suspense. Check out our new React blog post for more about the best practices we've identified for using these features:"
+    },
+    {
+      "id": 5,
+      "text":"We’ll be publishing more stories about different folks in the React community and their contributions in the coming weeks. Big thanks to \n@rachelnabors\n for conducting these interviews, and to \n@xylavie\n for the beautiful illustrations!"
+    },
+    {
+      "id": 6,
+      "text":"At ReactConf, \n@yuzhiz\n gave a keynote about what the React Team has been working on, including Selective Hydration, Suspense, and Concurrent Mode. Check it out if you haven’t seen it yet!"
+    },
+    {
+      "id": 7,
+      "text":"React Community Stories is a new series of short interviews with folks behind the scenes who make the React community truly awesome. Get to know \n@yuzhiz\n — she has been managing the React team for the past year!"
+    },
+    {
+      "id": 8,
+      "text":"I'm thrilled that \n@acdlite\n joined us again for a Concurrent Mode update\n\nAndrew's a gem\nHe's been on a 3 year journey to make concurrency in React a reality\n\nHe shares what he's learned in that time and how excited he is to see what we'll do with Suspense\n\nI love his candor"
+    },
+    {
+      "id": 9,
+      "text":"It’s the second day of ReactConf! The live stream is starting now:\n"
+    },
+    {
+      "id": 10,
+      "text":"It took us several years of research and development to get to this milestone. Still, it's still very early and experimental. This release is primarily aimed at early adopters and people who are curious. We hope you'll enjoy playing with it!"
+    },
+    {
+      "id": 11,
+      "text":"Today, we're excited to share the first early community preview of Concurrent Mode. It offers new composable primitives to help you orchestrate delightful user experiences.\n"
+    },
+    {
+      "id": 12,
+      "text":"Would you like to help test new React features *before* they are released?\n\nTo share upcoming changes with our partners in the React ecosystem, we’re establishing official prerelease channels.\n"
+    },
+    {
+      "id": 13,
+      "text":"Hateful rhetoric has no place in the React community. That includes misogyny, homophobia, transphobia, racism, and white supremacy. These behaviors are abhorrent to everyone on the React team. It is our fault that we haven’t been as loud and clear about it as we should have."
+    },
+    {
+      "id": 14,
+      "text":"We’re thankful to all beta testers over the past few months. As always, feedback in issues and here is appreciated. You can find the full list of improvements in the changelog:"
+    },
+    {
+      "id": 15,
+      "text":"7. Finally, if you reload the page, DevTools will now try its best to restore your previous position in the tree and your selection. Even if those components load asynchronously!"
+    },
+    {
+      "id": 16,
+      "text":"6. Distracted by seeing all those context consumers? You can now hide some components in the tree (including context providers and consumers) until you need them."
+    },
+    {
+      "id": 17,
+      "text":"5. By popular demand, the Profiler can now answer why some component has rendered."
+    },
+    {
+      "id": 18,
+      "text":"4. The new “rendered by” list helps you answer “Which component gave these props to me?” without checking every intermediate parent. This will help you quickly find the component responsible for incorrect rendering."
+    },
+    {
+      "id": 19,
+      "text":"3. Higher order components like connect() now display a special badge instead of names like connect(Button). This should help visually clean up the tree if you don’t use Hooks yet."
+    },
+    {
+      "id": 20,
+      "text":"2. Even very deep trees are now possible to navigate fast thanks to dynamically adjusted indentation. This should help in larger apps!"
+    },
+    {
+      "id": 21,
+      "text":"Good morning, Europe! In case you missed it last night, we published a new version of React DevTools. We kept the blog post short, but here’s a few notable improvements.\n\n1. You can finally see, expand, and edit the state inside React Hooks:"
+    }
+  ]
+}
