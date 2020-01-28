@@ -37,4 +37,6 @@ class Summary:
         \n\t   ]
         \n\t }
         """
-        return True, kwargs['input']
+        my_input = kwargs['input']
+        summary = get_summary(my_input['n_ideas'],my_input['opinions'])
+        return True, summary
