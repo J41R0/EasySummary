@@ -6,8 +6,7 @@ from projects.NLP.summary import get_summary
 class SummaryTest(unittest.TestCase):
 
     def test_summarization_method(self):
-        op_str = """{
-          "opinions": [
+        op_str = """[
             {
               "id": 1,
               "text": "The cats are really cute animals"
@@ -20,7 +19,7 @@ class SummaryTest(unittest.TestCase):
               "id": 3,
               "text": "I am a dog lover and hate cats. I will never have a cat as a pet."
             }
-        ]}
+        ]
         """
         op_dict = json.loads(op_str)
         summary = get_summary(1, op_dict)

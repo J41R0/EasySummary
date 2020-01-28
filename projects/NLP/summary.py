@@ -16,7 +16,7 @@ def get_summary(n_ideas, opinions):
     nlp = spacy.load('en_core_web_lg')
 
     full_text = ""
-    for curr_op in opinions["opinions"]:
+    for curr_op in opinions:
         full_text += curr_op["text"] + "."
 
     doc = nlp(full_text)
