@@ -1,0 +1,16 @@
+---
+project name: Summary
+security:
+  use_security: False
+description: >
+  Simple summarization method as service
+mode: debug
+logging:
+  level: 1
+  format: '%%(asctime)s - %%(levelname)s - %%(filename)s - %%(lineno)d - %%(message)s'
+  date_format: '%%Y-%%m-%%d %%H:%%M:%%S'
+config:
+  desc: my project config data
+dependencies:
+
+
