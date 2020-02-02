@@ -23,7 +23,7 @@ class SummaryTest(unittest.TestCase):
         """
         op_dict = json.loads(op_str)
         summary = get_summary(1, op_dict)
-        self.assertIn("I am a dog lover and hate cats", summary)
+        self.assertIn("The cats are really cute animals", summary)
 
 
 if __name__ == '__main__':

@@ -25,10 +25,11 @@ def get_summary(n_ideas, opinions):
         # using simple word representation ignoring stop words and punctuation
         word_text = word.text.lower()
         if word_text not in nlp.Defaults.stop_words and word.pos_ != 'PUNCT':
+            # using the word lemma to represent the frequency
             if word_text not in word_freq:
-                word_freq[word_text] = 1
+                word_freq[word.lemma_] = 1
             else:
-                word_freq[word_text] += 1
+                word_freq[word.lemma_] += 1
 
     # normalize frecuency vector
     max_freq = max(word_freq.values())
@@ -41,11 +42,11 @@ def get_summary(n_ideas, opinions):
     for sentence in sentence_list:
         # the sentences weight is defined by the frequency of contained words
         for word in sentence:
-            if word.text.lower() in word_freq:
+            if word.lemma_ in word_freq:
                 if sentence not in sent_score:
-                    sent_score[sentence] = word_freq[word.text.lower()]
+                    sent_score[sentence] = word_freq[word.lemma_]
                 else:
-                    sent_score[sentence] += word_freq[word.text.lower()]
+                    sent_score[sentence] += word_freq[word.lemma_]
 
     summarized_sent = nlargest(n_ideas, sent_score, key=sent_score.get)
     summary_list = [w.text for w in summarized_sent]
