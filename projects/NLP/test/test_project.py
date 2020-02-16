@@ -12,9 +12,9 @@ class DefaultVisitorTest(unittest.TestCase):
 
     def test_homepage(self):
         # Test Sample project homepage
-        self.browser.get('http://localhost:5000/default_proj')
+        self.browser.get('http://localhost:5000/NLP')
         # Default title test
-        self.assertIn('Default', self.browser.title)
+        self.assertIn('Summary Project', self.browser.title)
 
     def test_post(self):
         test_json = {"opinions":
@@ -48,10 +48,10 @@ class DefaultVisitorTest(unittest.TestCase):
             ,
             "n_ideas": 1
         }
-        res = self.browser.request('POST', 'http://localhost:5000/default_proj/default_proj/DemoProj',
+        res = self.browser.request('POST', 'http://localhost:5000/NLP/NLP/Summary',
                                    json=test_json)
 
-        self.assertEqual({'success': True, 'data': 'I am a dog lover and hate cats.', 'message': ''}, res.json())
+        self.assertEqual({'success': True, 'data': 'The cats are really cute animals.', 'message': ''}, res.json())
 
 
 if __name__ == '__main__':
