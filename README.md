@@ -5,6 +5,8 @@ Require:
 * xintesis 
 * spaCy
 * en_core_web_sm spaCy model
+* selenium-requests
+* behave
 
 
 Installation steps:
